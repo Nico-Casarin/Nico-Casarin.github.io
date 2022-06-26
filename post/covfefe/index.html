@@ -15,7 +15,7 @@
   },
   "name":"Nico Casarin personal blog",
   "description":"Was it me? Was it you? Brief analysis of the twitting behaviour of an (in)famous Twitter star.",
-  "url":"https:\/\/Nico-Casarin.github.io\/post\/covfefe\/",
+  "url":"https:\/\/Nico-Casarin.github.io\/post\/covfefe\/covfefe\/",
   "keywords":"[]"
 }
 
@@ -33,8 +33,8 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Covfefe">
 <meta name="twitter:title" content="Covfefe">
-<meta property="og:url" content="https://Nico-Casarin.github.io/post/covfefe/">
-<meta property="twitter:url" content="https://Nico-Casarin.github.io/post/covfefe/">
+<meta property="og:url" content="https://Nico-Casarin.github.io/post/covfefe/covfefe/">
+<meta property="twitter:url" content="https://Nico-Casarin.github.io/post/covfefe/covfefe/">
 <meta property="og:site_name" content="Nico Casarin personal blog">
 <meta property="og:description" content="Was it me? Was it you? Brief analysis of the twitting behaviour of an (in)famous Twitter star.">
 <meta name="twitter:description" content="Was it me? Was it you? Brief analysis of the twitting behaviour of an (in)famous Twitter star.">
@@ -71,7 +71,7 @@
 
     
 
-    <link rel="canonical" href="https://Nico-Casarin.github.io/post/covfefe/">
+    <link rel="canonical" href="https://Nico-Casarin.github.io/post/covfefe/covfefe/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -261,7 +261,7 @@
 <span><span class='nf'>ggplot</span><span class='o'>(</span><span class='nv'>trump</span>, <span class='nf'>aes</span><span class='o'>(</span>x<span class='o'>=</span><span class='nv'>date</span><span class='o'>)</span><span class='o'>)</span> <span class='o'>+</span> </span>
 <span> <span class='nf'>geom_histogram</span><span class='o'>(</span><span class='nf'>aes</span><span class='o'>(</span>y<span class='o'>=</span><span class='nv'>..density..</span><span class='o'>)</span>, colour<span class='o'>=</span><span class='s'>"black"</span>, fill<span class='o'>=</span><span class='s'>"white"</span>, bins <span class='o'>=</span> <span class='m'>200</span><span class='o'>)</span><span class='o'>+</span></span>
 <span> <span class='nf'>geom_density</span><span class='o'>(</span>alpha<span class='o'>=</span><span class='m'>.2</span>, fill<span class='o'>=</span><span class='s'>"#bc5090"</span><span class='o'>)</span> </span></code></pre>
-<img src="figs/freqpoly-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/freqpoly-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>The density ploy highlights that a major rise occurred after mid-2011 and a general drop after 2016. Also, around early 2015 there was a constant high-rate tweeting period, but the histogram points out the highest peaks, although isolated, occurred early and mid-2015. This plot allows us to understand the tweets frequency over the whole time gathered in the dataset.</p>
 <h3 id="312-hourly-distribution-a-name312a">3.1.2 Hourly distribution <a name='312'></a></h3>
@@ -282,7 +282,7 @@
 <span>            stat <span class='o'>=</span> <span class='s'>'identity'</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>facet_wrap</span><span class='o'>(</span><span class='o'>~</span> <span class='nv'>weekday</span><span class='o'>)</span> <span class='o'>+</span> </span>
 <span>  <span class='nf'>ylab</span><span class='o'>(</span>label <span class='o'>=</span> <span class='s'>"Daily distribution"</span><span class='o'>)</span></span></code></pre>
-<img src="figs/weekday_recode-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/weekday_recode-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>The results evidence a clear pattern: Monday to Friday, the tweets' pattern show a decrease from the first hours of the day to the early morning, but after 10 A.M. there is a strong increase that peaks around 8 P.M. Saturday and Sunday follow a &ldquo;double-u&rdquo; pattern, which peaks around 2 A.M., 12 P.M. and 10 P.M.</p>
 <h3 id="313-bad-or-good-a-name313a">3.1.3 Bad or Good? <a name='313'></a></h3>
@@ -305,7 +305,7 @@
 <span>  <span class='nf'>facet_wrap</span><span class='o'>(</span><span class='o'>~</span><span class='nv'>sentiment</span>, scales <span class='o'>=</span> <span class='s'>"free_y"</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>labs</span><span class='o'>(</span>x <span class='o'>=</span> <span class='kc'>NULL</span>, y<span class='o'>=</span> <span class='s'>"Count"</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>coord_flip</span><span class='o'>(</span><span class='o'>)</span></span></code></pre>
-<img src="figs/bad_or_good-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/bad_or_good-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>Interesting, but not surprising, to note that the most used positive word is <em>trump</em>. It looks like our subject could have some attention-seeking problems! Anyways, in this case, the word is coded as positive only because of the <a href="https://www.merriam-webster.com/dictionary/trump">meaning</a> of that word. This simple, but still informative plot, allows us to understand the basic tendency in the words of the tweets. However, this is a very basic one. For example, further analysis could explore the top bigrams to a deeper understanding of the relationship between the words, or we could calculate the tf-idf statistics to understand the most relevant keywords!</p>
 <h2 id="32-a-name32a">3.2 <a name='32'></a></h2>
@@ -345,7 +345,7 @@
 <span>  <span class='nf'>scale_fill_manual</span><span class='o'>(</span>values <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"#3DDC84"</span>, <span class='s'>'#555555'</span><span class='o'>)</span>,labels <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"Android"</span>, <span class='s'>"iPhone"</span><span class='o'>)</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>labs</span><span class='o'>(</span>fill<span class='o'>=</span><span class='s'>'Twitting device'</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>scale_y_continuous</span><span class='o'>(</span>labels <span class='o'>=</span> <span class='nf'>scales</span><span class='nf'>::</span><span class='nv'><a href='https://scales.r-lib.org/reference/percent_format.html'>percent</a></span><span class='o'>)</span></span></code></pre>
-<img src="figs/Sentiment_plot-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/Sentiment_plot-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <h3 id="323">3.2.3</h3>
 <p>For the emotional language, we apply the same procedure used for the sentiments but select the others variables:</p>
@@ -376,7 +376,7 @@
 <span>  <span class='nf'>scale_y_continuous</span><span class='o'>(</span>labels <span class='o'>=</span> <span class='nf'>scales</span><span class='nf'>::</span><span class='nv'><a href='https://scales.r-lib.org/reference/percent_format.html'>percent</a></span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>scale_fill_manual</span><span class='o'>(</span>values <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"#3DDC84"</span>, <span class='s'>"#555555"</span><span class='o'>)</span>,</span>
 <span>                    labels <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"Android"</span>, <span class='s'>"iPhone"</span><span class='o'>)</span><span class='o'>)</span></span></code></pre>
-<img src="figs/Emotions_plot-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/Emotions_plot-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <h3 id="324">3.2.4</h3>
 <p>Whose tweets get more &ldquo;likes&rdquo; (or &ldquo;favorites&rdquo;) and more retweets?</p>
@@ -398,7 +398,7 @@
 <span>  <span class='nf'>scale_x_discrete</span><span class='o'>(</span>labels <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"Favorite"</span>, <span class='s'>"Retweet"</span><span class='o'>)</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>scale_fill_manual</span><span class='o'>(</span>values <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"#3DDC84"</span>, <span class='s'>"#555555"</span><span class='o'>)</span>,</span>
 <span>                    labels <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"Android"</span>, <span class='s'>"iPhone"</span><span class='o'>)</span><span class='o'>)</span></span></code></pre>
-<img src="figs/likes_and_retweets-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/likes_and_retweets-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>The first two plots show no clear prevalence of the usage of sentiment words and emotional words. The distribution between DT&rsquo;s tweets and his staff&rsquo;s ones is comparable and do not show relevant peaks. On the other hand, the last plot shows a clear tendency: tweets published by DT&rsquo;s staff have more engagement than DT&rsquo;s tweets. iPhone&rsquo;s tweets get almost 4 times &ldquo;likes&rdquo; than Android&rsquo;s ones and get retweeted 5 times more.</p>
 <h2 id="33-a-name33a">3.3 <a name='33'></a></h2>
@@ -434,7 +434,7 @@
 <span><span class='c'>#&gt; Multiple R-squared:  0.001664,  Adjusted R-squared:  0.001631 </span></span>
 <span><span class='c'>#&gt; F-statistic: 51.29 on 1 and 30778 DF,  p-value: 0.0000000000008131</span></span><span><span class='nf'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='o'>(</span><span class='nv'>model</span>, <span class='m'>1</span><span class='o'>)</span></span>
 <span><span class='nf'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='o'>(</span>a <span class='o'>=</span> <span class='m'>0</span>, b <span class='o'>=</span> <span class='m'>0</span>, lty <span class='o'>=</span> <span class='m'>2</span><span class='o'>)</span></span></code></pre>
-<img src="figs/favorite_sent_regression-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/favorite_sent_regression-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>The regression result for the formula favorite_count ~ sentiment seems to show a statistically significant negative relationship for the sentiment. For every step on the x-axis, the predicted favourite count decrease by 457 favourites (aka less negative tweets receive fewer likes). Despite this, the R-squared is very low, so the regressors can explain only a little part of the dependent variable variation. Lastly, the Residual vs Fitted plot shows that our data present heteroscedasticity. The model should not be trusted.</p>
 <p>Now we make the regression using the same predictors, but using <em>retweet_count</em> as the predicted variable:</p>
@@ -459,7 +459,7 @@
 <span><span class='c'>#&gt; Multiple R-squared:  0.002974,  Adjusted R-squared:  0.002941 </span></span>
 <span><span class='c'>#&gt; F-statistic: 91.79 on 1 and 30778 DF,  p-value: &lt; 0.00000000000000022</span></span><span><span class='nf'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='o'>(</span><span class='nv'>model</span>, <span class='m'>1</span><span class='o'>)</span></span>
 <span><span class='nf'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='o'>(</span>a <span class='o'>=</span> <span class='m'>0</span>, b <span class='o'>=</span> <span class='m'>0</span>, lty <span class='o'>=</span> <span class='m'>2</span><span class='o'>)</span></span></code></pre>
-<img src="figs/retweet_sent_regression-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/retweet_sent_regression-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>The results show a concordance with the trends resulting for the <em>favorite_count</em>: more positive words lead to fewer retweets, but the magnitude of the Estimate Coefficient is lower. Also, this model has the same problems as the first one.</p>
 <h3 id="332">3.3.2</h3>
@@ -486,7 +486,7 @@
 <span><span class='c'>#&gt; Multiple R-squared:  0.005703,  Adjusted R-squared:  0.005638 </span></span>
 <span><span class='c'>#&gt; F-statistic: 88.26 on 2 and 30777 DF,  p-value: &lt; 0.00000000000000022</span></span><span><span class='nf'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='o'>(</span><span class='nv'>model</span>, <span class='m'>1</span><span class='o'>)</span></span>
 <span><span class='nf'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='o'>(</span>a <span class='o'>=</span> <span class='m'>0</span>, b <span class='o'>=</span> <span class='m'>0</span>, lty <span class='o'>=</span> <span class='m'>2</span><span class='o'>)</span></span></code></pre>
-<img src="figs/favorite_emo_regression-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/favorite_emo_regression-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>The results are in congruence with the previous ones, an increase of the negative words cause more likes and an increase of the positive words cause fewer likes. But they also have the same problems and the model is not trustworthy.</p>
 <p>As before we fit the model for the <em>retweet_count</em> variable:</p>
@@ -512,7 +512,7 @@
 <span><span class='c'>#&gt; Multiple R-squared:  0.00733,  Adjusted R-squared:  0.007265 </span></span>
 <span><span class='c'>#&gt; F-statistic: 113.6 on 2 and 30777 DF,  p-value: &lt; 0.00000000000000022</span></span><span><span class='nf'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='o'>(</span><span class='nv'>model</span>, <span class='m'>1</span><span class='o'>)</span></span>
 <span><span class='nf'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='o'>(</span>a <span class='o'>=</span> <span class='m'>0</span>, b <span class='o'>=</span> <span class='m'>0</span>, lty <span class='o'>=</span> <span class='m'>2</span><span class='o'>)</span></span></code></pre>
-<img src="figs/rwtweet_emo_regression-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/rwtweet_emo_regression-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>Not surprisingly, as the <em>retweet_count</em>~<em>sentiment</em> model, this regression shows the same trends as the last one, but the magnitude of the Coefficient estimated is lower and, again, the model presents a low R-squared and heteroscedasticity.</p>
 <h3 id="333">3.3.3</h3>
@@ -540,7 +540,7 @@
 <span><span class='c'>#&gt; Multiple R-squared:  0.01268,  Adjusted R-squared:  0.01258 </span></span>
 <span><span class='c'>#&gt; F-statistic: 131.7 on 3 and 30776 DF,  p-value: &lt; 0.00000000000000022</span></span><span><span class='nf'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='o'>(</span><span class='nv'>model</span>, <span class='m'>1</span><span class='o'>)</span></span>
 <span><span class='nf'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='o'>(</span>a <span class='o'>=</span> <span class='m'>0</span>, b <span class='o'>=</span> <span class='m'>0</span>, lty <span class='o'>=</span> <span class='m'>2</span><span class='o'>)</span></span></code></pre>
-<img src="figs/words_interaction_regression-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/words_interaction_regression-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>There is, indeed, a statistically significant interaction between the total words and the sentiment!</p>
 <h3 id="334">3.3.4</h3>
@@ -569,7 +569,7 @@
 <span><span class='c'>#&gt; Multiple R-squared:  0.1153,  Adjusted R-squared:  0.1152 </span></span>
 <span><span class='c'>#&gt; F-statistic:  1337 on 3 and 30776 DF,  p-value: &lt; 0.00000000000000022</span></span><span><span class='nf'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='o'>(</span><span class='nv'>model</span>, <span class='m'>1</span><span class='o'>)</span></span>
 <span><span class='nf'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='o'>(</span>a <span class='o'>=</span> <span class='m'>0</span>, b <span class='o'>=</span> <span class='m'>0</span>, lty <span class='o'>=</span> <span class='m'>2</span><span class='o'>)</span></span></code></pre>
-<img src="figs/fav_per_source-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/fav_per_source-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>The baseline category is <em>Android.</em> That means that <em>Other</em> follow a slightly more negative trend than <em>Android</em>, but <em>iPhone</em> has a contrary one. More positive words, in that case, means more likes! We can also show these results with a graphical approach:</p>
 <div class="highlight">
@@ -578,7 +578,7 @@
 <span>  <span class='nf'>labs</span><span class='o'>(</span>color <span class='o'>=</span><span class='s'>'Twitting device'</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>scale_color_manual</span><span class='o'>(</span>values <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"#3DDC84"</span>, <span class='s'>'#555555'</span>, <span class='s'>'purple'</span><span class='o'>)</span>,</span>
 <span>                     labels <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"Android"</span>,<span class='s'>"iPhone"</span>,<span class='s'>"Others"</span><span class='o'>)</span><span class='o'>)</span></span></code></pre>
-<img src="figs/regression_sources-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/regression_sources-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span><span class='nf'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='o'>(</span><span class='nv'>model</span> <span class='o'>&lt;-</span> <span class='nf'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='o'>(</span><span class='nv'>retweet_count</span> <span class='o'>~</span> <span class='nv'>sentiment</span> <span class='o'>+</span> <span class='nf'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='o'>(</span><span class='nv'>source_rec</span><span class='o'>)</span>, </span>
@@ -604,7 +604,7 @@
 <span><span class='c'>#&gt; Multiple R-squared:  0.1165,  Adjusted R-squared:  0.1164 </span></span>
 <span><span class='c'>#&gt; F-statistic:  1353 on 3 and 30776 DF,  p-value: &lt; 0.00000000000000022</span></span><span><span class='nf'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='o'>(</span><span class='nv'>model</span>, <span class='m'>1</span><span class='o'>)</span></span>
 <span><span class='nf'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='o'>(</span>a <span class='o'>=</span> <span class='m'>0</span>, b <span class='o'>=</span> <span class='m'>0</span>, lty <span class='o'>=</span> <span class='m'>2</span><span class='o'>)</span></span></code></pre>
-<img src="figs/ret_per_source-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/ret_per_source-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <div class="highlight">
 <pre class='chroma'><code class='language-r' data-lang='r'><span><span class='nf'>ggplot</span><span class='o'>(</span><span class='nv'>trump</span>, <span class='nf'>aes</span><span class='o'>(</span>x <span class='o'>=</span> <span class='nv'>sentiment</span>, y <span class='o'>=</span> <span class='nv'>retweet_count</span>, group <span class='o'>=</span> <span class='nv'>source_rec</span><span class='o'>)</span><span class='o'>)</span><span class='o'>+</span></span>
@@ -612,7 +612,7 @@
 <span>  <span class='nf'>labs</span><span class='o'>(</span>color <span class='o'>=</span><span class='s'>'Twitting device'</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>scale_color_manual</span><span class='o'>(</span>values <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"#3DDC84"</span>, <span class='s'>'#555555'</span>, <span class='s'>'purple'</span><span class='o'>)</span>,</span>
 <span>                     labels <span class='o'>=</span> <span class='nf'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='o'>(</span><span class='s'>"Android"</span>,<span class='s'>"iPhone"</span>,<span class='s'>"Others"</span><span class='o'>)</span><span class='o'>)</span></span></code></pre>
-<img src="figs/retweet_sources-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/retweet_sources-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>Interestingly, in this case, even if iPhone tweets still get more engagement than other sources, an increase in the sentiment values (aka more positive words/or less negative ones) lead to a reduction of the reweets.</p>
 <h2 id="34-a-name34a">3.4 <a name='34'></a></h2>
@@ -663,7 +663,7 @@
 <span>  <span class='nf'>geom_point</span><span class='o'>(</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>ylab</span><span class='o'>(</span>label <span class='o'>=</span> <span class='s'>"Montly tweets"</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>xlab</span><span class='o'>(</span>label <span class='o'>=</span> <span class='s'>""</span><span class='o'>)</span></span></code></pre>
-<img src="figs/Political_activity_plot-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/Political_activity_plot-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>The graph shows the monthly volume of tweets published during five different periods of Donald Trump&rsquo;s activity. We can understand that the more dense period is &ldquo;Before Campaign&rdquo;. After the official campaign launch, the growing trend starts to drop, with only one peak before the presidential election. Nevertheless, this graph is not very informative because it doesn&rsquo;t show us the behaviour of the different sources.</p>
 <h3 id="342">3.4.2</h3>
@@ -710,7 +710,7 @@
 <span>  <span class='nf'>geom_point</span><span class='o'>(</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>ylab</span><span class='o'>(</span>label <span class='o'>=</span> <span class='s'>"Montly tweets"</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>xlab</span><span class='o'>(</span>label <span class='o'>=</span> <span class='s'>""</span><span class='o'>)</span></span></code></pre>
-<img src="figs/periods_sources-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/periods_sources-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>The chart highlights the monthly frequency divided by the three recoded sources. In the first area, &ldquo;Before Campaign&rdquo;, the volume before 2011 (filtered out!) are mostly linked with Trump&rsquo;s media career and general political opinions. In the four years approaching the 16th of June 2015, <a href="https://time.com/3923128/donald-trump-announcement-speech">when Trump announced his Presidential campaign</a>, the political topics overtake the others, simultaneously with an increase in the tweets volume. Throughout the last months of 2015, after the official announcement, it can be observed that Trump&rsquo;s campaign staff, who&rsquo;s tweeting from iPhone devices, started tweeting. During the whole time, the main tweeting source was Android. After the Official nomination, the tweets from Android no longer have the primacy, in favour of those published via iPhone. Lastly, after the presidential election, tweets from &ldquo;Others&rdquo; drops close to zero. Furthermore, the volume of the monthly tweets is reduced.</p>
 <h3 id="343">3.4.3</h3>
@@ -763,7 +763,7 @@
 <span>  <span class='nf'>geom_point</span><span class='o'>(</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>ylab</span><span class='o'>(</span>label <span class='o'>=</span> <span class='s'>"Sentiment words count"</span><span class='o'>)</span><span class='o'>+</span></span>
 <span>  <span class='nf'>xlab</span><span class='o'>(</span>label <span class='o'>=</span> <span class='s'>""</span><span class='o'>)</span></span></code></pre>
-<img src="figs/sentiment_period-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/sentiment_period-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>As shown before, negative words are used about half times than positive words. The peaks between the two groups correspond to the peaks in the overall tweeting frequency. Only the months before the Primary campaign the usage of the negative words seems less responsive to the peaks. Lastly, after the official campaign launch, the delta between Positive and Negative words shortens, because there is a reduction of positive words, but the negative one stays around the same frequency</p>
 <h3 id="344">3.4.4</h3>
@@ -813,7 +813,7 @@
 <span></span>
 <span><span class='nf'>ggarrange</span><span class='o'>(</span><span class='nv'>pos</span>, <span class='nv'>neg</span>,</span>
 <span>          ncol <span class='o'>=</span> <span class='m'>2</span><span class='o'>)</span></span></code></pre>
-<img src="figs/emotion-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="images/emotion-1.png" width="700px" style="display: block; margin: auto;" />
 </div>
 <p>As we saw in the sentiment&rsquo;s plot the positive words are more frequent in the first period. After the official campaign launch the difference decrease. The most relevant peaks occur immediately after the Primary campaign launch, during the primary campaign and before the official nomination and the presidential election.</p>
 
@@ -859,13 +859,13 @@
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://Nico-Casarin.github.io/post/covfefe/" title="" aria-label="">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://Nico-Casarin.github.io/post/covfefe/covfefe/" title="" aria-label="">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://Nico-Casarin.github.io/post/covfefe/" title="" aria-label="">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://Nico-Casarin.github.io/post/covfefe/covfefe/" title="" aria-label="">
           <i class="fab fa-linkedin" aria-hidden="true"></i>
         </a>
       </li>
@@ -930,13 +930,13 @@
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://Nico-Casarin.github.io/post/covfefe/" title="" aria-label="">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://Nico-Casarin.github.io/post/covfefe/covfefe/" title="" aria-label="">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://Nico-Casarin.github.io/post/covfefe/" title="" aria-label="">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://Nico-Casarin.github.io/post/covfefe/covfefe/" title="" aria-label="">
           <i class="fab fa-linkedin" aria-hidden="true"></i>
         </a>
       </li>
@@ -961,13 +961,13 @@
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2FNico-Casarin.github.io%2Fpost%2Fcovfefe%2F" aria-label="">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2FNico-Casarin.github.io%2Fpost%2Fcovfefe%2Fcovfefe%2F" aria-label="">
           <i class="fab fa-twitter" aria-hidden="true"></i><span></span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2FNico-Casarin.github.io%2Fpost%2Fcovfefe%2F" aria-label="">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2FNico-Casarin.github.io%2Fpost%2Fcovfefe%2Fcovfefe%2F" aria-label="">
           <i class="fab fa-linkedin" aria-hidden="true"></i><span></span>
         </a>
       </li>
@@ -1005,7 +1005,7 @@
     
   
     
-      <div id="cover" style="background-image:url('https://Nico-Casarin.github.io/figs/cover.jpg');"></div>
+      <div id="cover" style="background-image:url('https://Nico-Casarin.github.io/images/cover.jpg');"></div>
     
   
 
