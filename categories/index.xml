@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Nico Casarin personal blog</title>
+    <link>https://Nico-Casarin.github.io/categories/</link>
+    <description>Recent content in Categories on Nico Casarin personal blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Jun 2022 11:50:01 +0200</lastBuildDate><atom:link href="https://Nico-Casarin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>category</title>
+      <link>https://Nico-Casarin.github.io/categories/category/</link>
+      <pubDate>Sun, 26 Jun 2022 11:50:01 +0200</pubDate>
+      
+      <guid>https://Nico-Casarin.github.io/categories/category/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>subcategory</title>
+      <link>https://Nico-Casarin.github.io/categories/subcategory/</link>
+      <pubDate>Sun, 26 Jun 2022 11:50:01 +0200</pubDate>
+      
+      <guid>https://Nico-Casarin.github.io/categories/subcategory/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
